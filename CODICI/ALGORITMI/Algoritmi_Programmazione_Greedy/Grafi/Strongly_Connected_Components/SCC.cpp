@@ -1,0 +1,6 @@
+SCC(G)
+  foreach(v in G.V)
+    Make-Set(v)
+  foreach(u,v in G.E)
+    if(Find-Set(u)!=Find-Set(v))
+    Union(u,v)
