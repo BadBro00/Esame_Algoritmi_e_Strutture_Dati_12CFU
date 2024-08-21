@@ -1,0 +1,12 @@
+Un NFA e’ un automa che, presa in input una sequenza di simboli del suo linguaggio, non raggiunge un unico stato,
+ma puo’ raggiungerne diversi, racchiusi in un insieme.
+
+Formalmente:
+  A = (Q,Σ,q0,F,δ:QxΣ−>P⊆Q).
+
+Definiamo il Linguaggio di un NFA come:
+Dato un NFA A = (Q,Σ,δ,q0,F), il linguaggio di A, definito con L(A), e' dato da:
+  L(A) = {w| δ(q0, w) ∩ F̸=∅}
+
+Ovvero le stringhe che fanno raggiungere ad A, partendo dallo stato iniziale q0,
+  uno degli stati contenuti nell'insieme degli stati finali accettanti F
