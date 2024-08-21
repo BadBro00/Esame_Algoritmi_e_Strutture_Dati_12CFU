@@ -1,0 +1,15 @@
+Un DFA e’ un automa che consiste delle seguenti componenti:
+
+1. Un insieme finito Q di stati
+2. Un insieme finito Σ di simboli
+3. Una funzione di stato δ : Q x Σ− > Q
+4. Uno stato iniziale q0
+5. Un insieme di stati finali accettanti F ⊆ Q
+
+-------------
+
+Il Linguaggio di un DFA e' definito come:
+Dato un DFA A=(Q,Σ,δ,q0,F), il linguaggio di A, definito con L(A), e' dato da:
+  L(A)={w : δ(q0, w) ∈ F}
+Ovvero, l'insieme delle stringhe che partendo dallo stato inziale q0, fanno raggiungere all'automa,
+mediante la funzione di transizione estesa, uno degli stati finali accettanti.
