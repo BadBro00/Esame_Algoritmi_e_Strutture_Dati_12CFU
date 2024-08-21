@@ -1,0 +1,10 @@
+Union(X,Y)
+  rootX<-Find-Set(X)
+  rootY<-Find-Set(Y)
+  if(rootX!=rootY)
+    if(rootX.rank>=rootY.rank)
+      rootY.p<-rootX
+      rootX.rank<-rootX.rank+1
+    else
+      rootX.p<-rootY
+      rootY.rank<-rootY.rank+1
